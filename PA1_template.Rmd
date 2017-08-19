@@ -1,4 +1,8 @@
-
+```{r opts, echo = FALSE}
+knitr::opts_chunk$set(
+  fig.path = "figures/"
+)
+```
 
 
 ## Loading and preprocessing the data
