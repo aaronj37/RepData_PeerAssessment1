@@ -26,7 +26,7 @@ Calculate and report the mean and median total number of steps taken per day
 mean(total_steps$steps)
 median(total_steps$steps)
 ```
-
+The mean is 10767.19 and the median is 10766
 
 
 ## What is the average daily activity pattern?
@@ -47,6 +47,7 @@ Which 5-minute interval, on average across all the days in the dataset, contains
 ```{r echo=TRUE}
 interval_steps[which.max(interval_steps$steps),]$interval
 ```
+The 835th interval has the maximum number of steps
 
 ## Imputing missing values
 Calculate and report the total number of missing values in the dataset (i.e. the total number of rows with NAs)
@@ -79,6 +80,7 @@ hist(new_total_steps$steps)
 mean(new_total_steps$steps)
 median(new_total_steps$steps)
 ```
+The new mean is 10766.19 and the new median is 10766.19
 
 Do these values differ from the estimates from the first part of the assignment? What is the impact of imputing missing data on the estimates of the total daily number of steps?
 
